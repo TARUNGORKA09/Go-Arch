@@ -39,4 +39,6 @@ func main() {
 	S.Push(3)
 	S.Push(4)
 	S.Print()
+	S.Pull()
+	S.Print()
 }
