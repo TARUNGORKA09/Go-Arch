@@ -38,6 +38,7 @@ func main() {
 	fmt.Println(databases)
 	Example1Database := client.Database("Example1")
 	InfoCollection := Example1Database.Collection("Info")
-	err = InfoCollection.FindOne(ctx, bson.D{{"Name", "Tarun"}}).Decode(&t)
+	_, err = InfoCollection.InsertOne(ctx, bson.D{{"Name", "Rahul"}, {"Roll", 10}})
+	err = InfoCollection.FindOne(ctx, bson.D{{"Name", "Rahul"}}).Decode(&t)
 	fmt.Println(t)
 }
