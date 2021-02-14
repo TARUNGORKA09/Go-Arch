@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"NHL_API/nhlapi"
+	"nhlapi"
 )
 
 func main() {
